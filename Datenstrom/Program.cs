@@ -11,7 +11,7 @@ namespace Byte_Array_im_File_sichern_V1_WOd
          static void Main(string[] args)
          {
             // define path and file name
-            string fileName = @"j:\Daten\byteArray.bin";
+            string fileName = @"\byteArray.bin";
 
             // define and initialize arrays
             byte[] byteArrayWrite = { 200, 201, 202, 203, 204, 205, 206, 207 };
