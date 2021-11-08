@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Serializer": {
+      "commandName": "Project",
+      "remoteDebugEnabled": false
+    }
+  }
+}

@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Animal.cs~RF26528c.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Daten\Dogs\" />
+    <Folder Include="Daten\Lions\" />
+  </ItemGroup>
+
+</Project>
