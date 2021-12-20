@@ -5,7 +5,7 @@ using System.Text;
 namespace SerializerJson
 {
     [Serializable]
-    class Lion : Animal
+    public class Lion : Animal
     {
         public int toothlength { get; set; }
 

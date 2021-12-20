@@ -40,15 +40,8 @@ namespace SerializerJson
 
 
 
+                    Save.SaveInClass(dog, dogs, FileNameDog);
 
-                    JsonSerializer serializer = new JsonSerializer();
-
-                    using (StreamWriter sw = new StreamWriter(FileNameDog))
-                    using (JsonWriter writer = new JsonTextWriter(sw))
-                    {
-                        serializer.Serialize(writer, dogs);
-
-                    }
 
 
 
@@ -66,15 +59,7 @@ namespace SerializerJson
 
                     lions.Add(lion);
 
-                    JsonSerializer serializer = new JsonSerializer();
-
-                    using (StreamWriter sw = new StreamWriter(FileNameLion))
-                    using (JsonWriter writer = new JsonTextWriter(sw))
-                    {
-                        serializer.Serialize(writer, lions);
-
-                    }
-
+                    Save.SaveInClass(lion, lions, FileNameLion);
 
                 }
                 else
@@ -88,66 +73,67 @@ namespace SerializerJson
 
 
 
-                try
+                //    try
 
-                {
-                    using (StreamReader file = File.OpenText(FileNameDog))
-                    {
-                        JsonSerializer serializer = new JsonSerializer();
-                        List<Dog> DogsRead = (List<Dog>)serializer.Deserialize(file, typeof(List<Dog>));
+                //    {
+                //        using (StreamReader file = File.OpenText(FileNameDog))
+                //        {
+                //            JsonSerializer serializer = new JsonSerializer();
+                //            List<Dog> DogsRead = (List<Dog>)serializer.Deserialize(file, typeof(List<Dog>));
 
-                        Console.WriteLine("Name of Dogs");
-                        foreach (Dog dog in DogsRead)
-                        {
-                            Console.WriteLine(dog.Name);
-                        }
-                    }
-
-
-
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine("No Dogs");
-                }
-
-
-                try
-
-                {
-                    using (StreamReader file = File.OpenText(FileNameLion))
-                    {
-                        JsonSerializer serializer = new JsonSerializer();
-                        List<Lion> lionsRead = (List<Lion>)serializer.Deserialize(file, typeof(List<Lion>));
-
-                        Console.WriteLine("Toothlenght of Lions");
-                        foreach (Lion lion in lionsRead)
-                        {
-                            Console.WriteLine(lion.toothlength);
-                        }
-                    }
+                //            Console.WriteLine("Name of Dogs");
+                //            foreach (Dog dog in DogsRead)
+                //            {
+                //                Console.WriteLine(dog.Name);
+                //            }
+                //        }
 
 
 
+                //    }
+                //    catch (Exception ex)
+                //    {
+                //        Console.WriteLine("No Dogs");
+                //    }
 
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine("No lions");
-                }
 
+                //    try
+
+                //    {
+                //        using (StreamReader file = File.OpenText(FileNameLion))
+                //        {
+                //            JsonSerializer serializer = new JsonSerializer();
+                //            List<Lion> lionsRead = (List<Lion>)serializer.Deserialize(file, typeof(List<Lion>));
+
+                //            Console.WriteLine("Toothlenght of Lions");
+                //            foreach (Lion lion in lionsRead)
+                //            {
+                //                Console.WriteLine(lion.toothlength);
+                //            }
+                //        }
+
+
+
+
+                //    }
+                //    catch (Exception ex)
+                //    {
+                //        Console.WriteLine("No lions");
+                //    }
+
+
+
+                //}
 
 
             }
 
 
+
+
+
+
         }
-
-
-            
-
-
-
     }
 }
 

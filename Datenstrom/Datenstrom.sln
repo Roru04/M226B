@@ -9,7 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Serializer", "..\Serializer
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SerializerJson", "..\SerializerJson\SerializerJson.csproj", "{7523D390-0D8A-4B63-AB6D-BAA2636B7970}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarSales", "..\CarSales\CarSales.csproj", "{2A3822A6-26FE-49DA-9180-ED481476402F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarSales", "..\CarSales\CarSales.csproj", "{2A3822A6-26FE-49DA-9180-ED481476402F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Events", "..\Events\Events.csproj", "{D973E9A0-6F44-45EF-9E13-D6653FD99890}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stub", "..\Stub\Stub.csproj", "{80FD66E5-1187-4563-B1E4-B42A32EE8237}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{2A3822A6-26FE-49DA-9180-ED481476402F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A3822A6-26FE-49DA-9180-ED481476402F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A3822A6-26FE-49DA-9180-ED481476402F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D973E9A0-6F44-45EF-9E13-D6653FD99890}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D973E9A0-6F44-45EF-9E13-D6653FD99890}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D973E9A0-6F44-45EF-9E13-D6653FD99890}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D973E9A0-6F44-45EF-9E13-D6653FD99890}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80FD66E5-1187-4563-B1E4-B42A32EE8237}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80FD66E5-1187-4563-B1E4-B42A32EE8237}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80FD66E5-1187-4563-B1E4-B42A32EE8237}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80FD66E5-1187-4563-B1E4-B42A32EE8237}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

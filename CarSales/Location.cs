@@ -8,7 +8,7 @@ namespace CarSales
     {
         public string Name { get; set ; }
         public object Parent { get; set ; }
-        public IEnumerable<object> Childern { get ; set ; }
+        public IEnumerable<IManagebleEntity> Childern { get ; set ; }
 
         public Location()
         {
